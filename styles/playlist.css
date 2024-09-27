@@ -20,30 +20,34 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3;
+    gap: 1em;
 
 }
 
 .header-title {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    padding: 2em;
 
+}
+
+.header-paragraph {
+    grid-column: 1 / 4;
+    position: relative;
+    padding: 3em;
 }
 
 .story-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3 ;
+    grid-template-rows: 3;
     justify-content: center;
     align-items: center;
     gap: 1em;
-    padding: 2em
+    padding: 2em;
 }
 
 
-.story-card {
-    grid-column: ;
-
-}
 
 
 
@@ -118,4 +122,3 @@ svg {
     /* background-color: rgb(94, 93, 93);
     border-radius: 5px; */
 }
-
