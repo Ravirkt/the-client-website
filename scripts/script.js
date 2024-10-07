@@ -14,16 +14,15 @@ function closemenu() {
 
 
 //  testen van video contols
-
 const video = document.getElementById('video-1');
 const playPauseButton = document.getElementById('pauze-play-button');
 
-playPauseButton.addEventListener('click', function(event) {
-    event.preventDefault(); 
+playPauseButton.addEventListener('click', function (event) {
+    event.preventDefault();
 
     if (video.paused) {
-        video.play(); 
+        video.play();
     } else {
-        video.pause(); 
+        video.pause();
     }
 });

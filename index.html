@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tumi Mundo</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/navigation.css">
-</head>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <section class="hamburger-drop-down" onclick="openmenu()">
+      <section class="hamburger-drop-down" onclick="openmenu()">
+        <a href="#">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"width="50"height="60"fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor"stroke-linecap="round"stroke-width="2"d="M5 7h14M5 12h14M5 17h14"/>
+          </svg>
+        </a>
+      </section>
+
+      <nav>
+        <ul class="navbar-items-container ham-menu test">
+          <li onclick="closemenu()">
             <a href="#">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="50" height="60" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+                <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"width="40"height="40"
+                    fill="none"viewBox="0 0 24 24">
+                    <path stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"
+                    stroke-width="2"d="M5 12h14M5 12l4-4m-4 4 4 4"/>
                 </svg>
             </a>
-        </section>
-
-        <nav>
-            <ul class="navbar-items-container ham-menu test">
-                <li onclick="closemenu()"><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
-                            viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h14M5 12l4-4m-4 4 4 4" />
-                        </svg>
-                    </a></li>
-                <li><a href="/playlist.html">Stories</a></li>
-                <li><a href="">testing</a></li>
-                <li><a href="">statistics</a></li>
-                <li><a href="/player.html">settings</a></li>
-                <li><a href="/index.html">home</a></li>
-            </ul>
-        </nav>
+          </li>
+          <li><a href="/playlist.html">Stories</a></li>
+          <li><a href="">testing</a></li>
+          <li><a href="">statistics</a></li>
+          <li><a href="/player.html">settings</a></li>
+          <li><a href="/index.html">home</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <article class="mouse-container">
+        <img class="mouse" src="/assets/mouse.png" />
+      </article>
 
-        <article class="mouse-container">
-            <img class="mouse" src="/assets/mouse.png">
-        </article>
-
-        <section class="header-info">
-            <h1 class="title">TUMI MUNDO</h1>
-            <p class="sub-title">Boost their brain activity while they explore vibrant characters and thrilling adventures in a new
-                language. This fun and engaging experience not only enhances language skills but also fosters curiosity
-                and creativity. Start today and watch your child's world expand!</p>
-
-        </section>
-
+      <section class="header-info">
+        <h1 class="title">TUMI MUNDO</h1>
+        <p class="sub-title">
+          Boost their brain activity while they explore vibrant characters and
+          thrilling adventures in a new language. This fun and engaging
+          experience not only enhances language skills but also fosters
+          curiosity and creativity. Start today and watch your child's world
+          expand!
+        </p>
+      </section>
     </main>
 
-
     <script src="/scripts/script.js" defer></script>
-
-</body>
-
+  </body>
 </html>
