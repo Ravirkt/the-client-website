@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumi Mundo</title>
+    <link rel="stylesheet" href="/styles/navigation.css">
+    <link rel="stylesheet" href="/styles/player.css">
+
+</head>
+
+<body>
+
+    <header>
+        <section class="hamburger-drop-down" onclick="openmenu()">
+            <a href="#">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="50" height="60" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+                </svg>
+            </a>
+        </section>
+
+        <nav>
+            <ul class="navbar-items-container ham-menu test">
+                <li onclick="closemenu()"><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                        </svg>
+                    </a></li>
+                <li><a href="/playlist.html">Stories</a></li>
+                <li><a href="">testing</a></li>
+                <li><a href="">statistics</a></li>
+                <li><a href="/player.html">settings</a></li>
+                <li><a href="/index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="story-player-container">
+        <video class="story-video" id="video-1" autoplay loop controls>
+            <source src="/assets/copyright free cartoon animation background for youtube video.mp4">
+
+        </video>
+        <h2 class="story-title">The friendly giraffe</h2>
+        <p class="card-paragraph">In the savanna, a gentle giraffe named Grace used her long neck to reach the tastiest
+            leaves high in the trees. One day, she noticed animals gathered around a watering hole and offered to share
+            her food. From then on, Grace became the savanna's tallest friend, teaching everyone that kindness can reach
+            great heights.</p>
+        <a class="play-pauze" id="pauze-play-button" href="">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="80" height="80" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                    d="M7 6a1 1 0 0 1 2 0v4l6.4-4.8A1 1 0 0 1 17 6v12a1 1 0 0 1-1.6.8L9 14v4a1 1 0 1 1-2 0V6Z"
+                    clip-rule="evenodd" />
+            </svg>
+
+
+        </a>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/scripts/script.js" defer></script>
+
+</body>
+
+</html>
