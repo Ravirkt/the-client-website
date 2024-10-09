@@ -1,7 +1,9 @@
 # Intro
-Tumi-mundo wil een platform waarmee baby’s van 6 maanden tot een jaar hun taalontwikkeling kunnen verbeteren en stimuleren omdat dit voordelen heeft voor het leerproces, vermindering van geestelijke ziektes en het vergroten van sociale vaardigheden.
+Tumi-Mundo is een platform dat zich richt op het verbeteren en stimuleren van de taalontwikkeling van baby's van 6 maanden tot een jaar. Dit is belangrijk omdat een goede taalontwikkeling veel voordelen heeft, zoals het verbeteren van het leerproces, het verminderen van geestelijke gezondheidsproblemen en het vergroten van sociale vaardigheden.
 
 Als schoolproject heb ik de opdracht gekregen van Tumi Mundo om de frontend van hun website te maken. Voor de eerste sprint was het de bedoeling dat de aangeleverde ontwerpen en de funcitonaliteiten daarin gerealiseerd moesten worden. Hierbij de vrijheid om een een ander design aan te houden en zelf te mogen bepalen welke pagina of functionaliteit de prioriteit kreeg.
+
+Voor de eerste sprint was het doel om de ontwerpen en functionaliteiten die Tumi-Mundo heeft aangeleverd te realiseren. Ik had echter de vrijheid om een ander design te kiezen en zelf te bepalen welke pagina of functionaliteit de meeste prioriteit kreeg.
 
 https://github.com/Ravirkt/the-client-website
 
