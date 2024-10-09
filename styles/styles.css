@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-size: cover;
-  background-image: url(/assets/www.png), radial-gradient(#3b0951, #773580);
+  background-image: url(../assets/woods.png), radial-gradient(#3b0951, #773580);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
