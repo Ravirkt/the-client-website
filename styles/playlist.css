@@ -4,18 +4,22 @@
 }
 
 body {
-  background-image: radial-gradient(#3b0951, #773580);
+  /* background-image: radial-gradient(#3b0951, #773580); */
+  background-image: radial-gradient(at top right,#3b0951, #773580);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   font-family: "Courier New", Courier, monospace;
+
+ 
 }
 
 /* parent class grid-container */
 .header-content {
   display: grid;
-  grid-template-columns: 200px 100px;
+  grid-template-columns: 200px 100px 1fr;
   grid-template-rows: 100px 100px 200px 200px;
   gap: 1em;
 }
@@ -28,6 +32,12 @@ body {
   grid-row: 1 / 2;
   padding-left: 1em;
   padding-top: 1em;
+  color: rgb(0, 0, 0);
+  
+
+  @media (min-width: 670px) {
+    font-size: xx-large;
+  }
 }
 
 /* child element grid-container */
@@ -36,12 +46,39 @@ body {
   grid-row: 2 / 3;
   padding-left: 1em;
   font-size: larger;
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+
+  @media (min-width: 670px) {
+    font-size: x-large;
+    
+  }
 }
+
+.header-image {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    max-width: 100%;
+
+    @media (max-width:970px){
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* parent class grid-container for searchbar */
 .searchbar-container {
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 300px;
   grid-template-rows: 50px 50px;
   justify-content: space-evenly;
   align-items: center;
@@ -73,21 +110,39 @@ body {
     list-style: none;
 } */
 
+
+
+
+
+
+
+
 .story-card {
   display: grid;
   grid-template-columns: 100px 200px 50px;
   grid-template-rows: 100px;
-  background-color: rgba(153, 147, 158, 0.192);
+  background-color: rgba(153, 147, 158, 0.248);
   justify-content: space-evenly;
   align-items: center;
-  margin: 1em;
+  margin: 10px;
 
-  @media (min-width: 500px) {
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 300px 50px;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 3em;
+  @media (min-width: 720px) {
+    display: inline-grid;
+    grid-template-columns: 100px 1fr 50px; 
+    grid-template-rows: auto; 
+    align-items: center; 
+    background-color: rgba(153, 147, 158, 0.248);
+    padding: 20px;
+    border-radius: 5px; 
+    margin: 10px; 
+    width: calc(33.33% - 30px); 
+    box-sizing: border-box; 
+    justify-content: unset;
+
+    @media (max-width: 800px) {
+        width: calc(50% - 30px); 
+    }
+
   }
 }
 
@@ -98,11 +153,15 @@ body {
   height: auto;
   object-fit: contain;
 
-  @media (min-width: 500px) {
-    grid-column: 1 / 2;
+  @media (min-width: 720px) {
+    /* grid-column: 1 / 2;
     grid-row: 1 / 1;
     width: 100%;
     height: 100%;
+    object-fit: contain; */
+    grid-column: 1 / 2;
+    width: 100%;
+    height: auto;
     object-fit: contain;
   }
 }
@@ -111,12 +170,11 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   font-size: medium;
-  padding-left: 1em;
+  padding-left: 1em;  
 
-  @media (min-width: 500px) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 2;
-    display: none;
+  @media (min-width: 720px) {
+    display: none; 
+    
   }
 }
 
@@ -124,18 +182,39 @@ body {
   grid-column: 2 / 3;
   grid-row: 1;
   display: none;
+  color: rgb(0, 0, 0);
 
-  @media (min-width: 500px) {
-    display: grid;
-  }
+  @media (min-width: 720px) {
+    /* display: grid;
+    grid-column: 2 /3;
+    grid-row: 1 / 2;
+    font-size: larger; */
+    grid-column: 2 / 3;
+    margin: 0; 
+    font-size: 0.7em; 
+    display: unset;
+    
+}
 }
 
 .card-play-button {
-  @media (min-width: 500px) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+  @media (min-width: 720px) {
+    /* grid-column: 1 / 4;
+    grid-row: 2 / 3; */
+    grid-column: 3 / 4;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(136, 50, 155, 0.511);
+    border-radius: 5px; 
+    padding: 5px; 
   }
 }
+
+
+
+
+
 
 
 
@@ -220,3 +299,72 @@ svg {
   /* background-color: rgb(94, 93, 93);
     border-radius: 5px; */
 }
+
+
+/* .story-card {
+    display: grid;
+    grid-template-columns: 100px 200px 50px;
+    grid-template-rows: 100px;
+    background-color: rgba(153, 147, 158, 0.248);
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+  
+    @media (min-width: 670px) {
+      grid-template-columns: 300px 300px 50px;
+      grid-template-rows: 300px;
+      justify-content:space-between;
+      
+    }
+  }
+  
+  .playlist-image {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  
+    @media (min-width: 670px) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 1;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  .card-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: medium;
+    padding-left: 1em;
+  
+    @media (min-width: 670px) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
+      display: none;
+    }
+  }
+  
+  .card-paragraph {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    display: none;
+  
+    @media (min-width: 670px) {
+      display: grid;
+      grid-column: 2 /3;
+      grid-row: 1 / 2;
+      font-size: larger;
+    }
+  }
+  
+  .card-play-button {
+    @media (min-width: 670px) {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+      background-color: rgba(86, 151, 151, 0.511);
+    }
+  } */
+  
