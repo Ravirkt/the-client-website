@@ -67,3 +67,12 @@ svg {
   /* background-color: rgb(94, 93, 93);
     border-radius: 5px; */
 }
+
+/* return knop voor alsje terug wilt gaan naar all stories page */
+.return-arrow {
+  margin-top: 1em;
+}
+
+.return-arrow svg {
+  color: rgba(0, 0, 0, 0.322);
+}
