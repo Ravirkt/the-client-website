@@ -56,11 +56,28 @@ kun je deze plaatsen waar ik wil ten opzichte van de de background die ik in de 
   grid-column: 1 / 1;
   font-size: xx-large;
   /* box-shadow: 0px 0px 9px 2px black; */
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 400px) {
+    font-size: large;
+    padding-left: 2em;
+}
+
+  
 }
 
 .sub-title {
   grid-row: 2 / 3;
   grid-column: 1 / 1;
   font-size: medium;
-  /* box-shadow: 0px 0px 9px 2px black; */
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+
+  @media (max-width: 400px) {
+    padding: 2em 0 0 2em;
+}
+
+
+
+
 }
