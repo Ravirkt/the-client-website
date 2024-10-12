@@ -96,9 +96,22 @@ body {
     list-style: none;
 } */
 
+
+
+
+
+/* Hier wordt doormiddel van display: grid een grid layout gedefinieerd. */
+
+/* grid-template-column
+Hier geef ik aan dat ik 3 kolommen wil maken eerste kolom is 100px 2de is 200px en 3de is 50px
+Deze waardes heb ik gekozen omdat de ik de image in de eerste kolom wil de titel in de 2de en de playbutton in de derde */
+
+/* grid-template-rows
+Hier geeft ik aan dat ik 1 row wil inde layout van 100px. Dit zal de hoogte weergeven van card.
+*/
 .story-card {
   display: grid;
-  grid-template-columns: 100px 200px 50px;
+  grid-template-columns: 100px 200px 50px; 
   grid-template-rows: 100px;
   background-color: rgba(153, 147, 158, 0.248);
   justify-content: space-evenly;
@@ -124,9 +137,20 @@ body {
   }
 }
 
+
+/*   grid-column: 1;
+Hier geef ik aan dat ik wil dat de image-element wordt geplaatst vanaf de eerst lijn van de grid */
+
+/*     grid-row: 1;
+Hier geef ik aan dat ik wil dat de image-element wordt geplaatst op de eerste row nummer 1 van de grid
+*/
+
+/* omdat ik in de parent-container heb gedefinieerd justify-content: space-evenly en align-items:center worden
+de image , titel en play-button in het midden van de grid-block gecentreerd.
+ */
 .playlist-image {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -143,6 +167,7 @@ body {
     object-fit: contain;
   }
 }
+
 
 .card-title {
   grid-column: 2 / 3;
