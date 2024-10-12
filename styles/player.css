@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: radial-gradient(at top right,#3b0951, #773580);
+  background-image: radial-gradient(at top right, #3b0951, #773580);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,7 +32,10 @@ body {
   object-fit: cover;
   box-shadow: 0px 0px 10px 1px rgb(190, 169, 199);
   -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
-  mask-image: linear-gradient(to bottom, transparant 25% rgb(226, 210, 210) 75%);
+  mask-image: linear-gradient(
+    to bottom,
+    transparant 25% rgb(226, 210, 210) 75%
+  );
   z-index: -9999;
 }
 

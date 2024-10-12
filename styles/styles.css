@@ -61,9 +61,7 @@ kun je deze plaatsen waar ik wil ten opzichte van de de background die ik in de 
   @media (max-width: 400px) {
     font-size: large;
     padding-left: 2em;
-}
-
-  
+  }
 }
 
 .sub-title {
@@ -75,9 +73,5 @@ kun je deze plaatsen waar ik wil ten opzichte van de de background die ik in de 
 
   @media (max-width: 400px) {
     padding: 2em 0 0 2em;
-}
-
-
-
-
+  }
 }
