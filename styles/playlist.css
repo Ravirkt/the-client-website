@@ -118,6 +118,26 @@ Hier geeft ik aan dat ik 1 row wil inde layout van 100px. Dit zal de hoogte weer
   align-items: center;
   margin: 10px;
 
+
+  /* Deze media querie zal worden ingeschalkeld als het schem een grootte van 720 of hoger bereikt. alle onderstaande
+  css properties worden dan toegepast. */
+
+  /* display: inline-grid
+  Dit is hetzelfde als display:grid alleen is deze veranderd naar een inline element. display:grid is een block element
+   */
+
+  /*grid-template-columns: 100px 1fr 50px;
+   /* Definieert de kolommen van de grid: De 1ste kolom is 100px breed, de 2de kolom neemt de rest van de beschikbare ruimte in (1fr),
+     de 3de kolom is 50px breed. */
+ 
+ /* grid-template-rows: auto;
+ De rows worden nu automatisch aangepast aan de content
+ */
+
+ /* width: calc(33.33% - 30px);
+Dit zorgt ervoor dat de breedte van de element een derde deel ineemnt en dan wordt er 30 pixels daar vanf genomen.
+ */
+
   @media (min-width: 720px) {
     display: inline-grid;
     grid-template-columns: 100px 1fr 50px;
