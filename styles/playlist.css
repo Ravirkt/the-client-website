@@ -16,9 +16,16 @@ body {
 
 /* parent class grid-container */
 .header-content {
+  /* Dit zorgt ervoor dat er een grid layout wordt gemaakt in dit element */
   display: grid;
+
+  /* Dit maakt de columns aan voor de grid. in dit geval zijn het drie columns van 200px , 100px en 1fr: dit maakt een column van de overgebleven ruimte */
   grid-template-columns: 200px 100px 1fr;
+
+  /* Dit maakt de rows aan voor de grid, de eerste row is 100px hoog en de tweede row is 100px, de derde is 200px hoog en de laaste row is 200px hoog */
   grid-template-rows: 100px 100px 200px 200px;
+
+  /* Dit zorgt voor een tussen ruimte tussen de grid elementen  */
   gap: 1em;
 }
 
@@ -26,7 +33,11 @@ body {
 .header-title {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+
+  /* Plaatst het element in de grid, waarbij het zich positioneert van column 1 tot column 3 */
   grid-column: 1 / 3;
+
+  /* Plaatst het element in de grid, waarbij het zich positioneert van row 1 tot row 2 */
   grid-row: 1 / 2;
   padding-left: 1em;
   padding-top: 1em;
@@ -39,7 +50,10 @@ body {
 
 /* child element grid-container */
 .header-paragraph {
+  /* Plaatst het element in de grid, waarbij het zich positioneert van column 1 tot column 3 */
   grid-column: 1 / 3;
+
+  /* Plaatst het element in de grid, waarbij het zich positioneert van row 2 tot row 3 */
   grid-row: 2 / 3;
   padding-left: 1em;
   font-size: larger;
@@ -51,6 +65,7 @@ body {
   }
 }
 
+/* Dit is voor een image die nog moet komen in de header voor de desktop versie */
 .header-image {
   grid-column: 3 / 3;
   grid-row: 1 / 1;
@@ -63,17 +78,27 @@ body {
 
 /* parent class grid-container for searchbar */
 .searchbar-container {
+  /* Dit zorgt ervoor dat er een grid layout wordt gemaakt in dit element */
   display: grid;
+
+  /* Dit maakt de columns aan voor de grid. in dit geval een column van 300px */
   grid-template-columns: 300px;
+
+  /* Dit maakt de rows aan voor de grid. in dit geval een row van 50px hoog en nog een van 50px hoog */
   grid-template-rows: 50px 50px;
+
+  /* Dit zorgt ervoor dat de items in de grid gelijkmatig worden verdeelt */
   justify-content: space-evenly;
   align-items: center;
 }
 
 /* child element grid-container */
 .searchbar {
-  grid-column: 1 / 1;
+  /* Plaatst het element in de eerste rij van de grid, met een start en eindpositie op rij 1. Ik kon hier ook alleen 1 schrijven */
   grid-row: 1 / 1;
+
+  /* Plaatst het element in de eerste kolom van de grid, met een start- en eindpositie op kolom 1. Ik kon hier ook alleen 1 schrijven */
+  grid-column: 1 / 1;
   width: 100%;
   height: 3em;
   border-radius: 1.2rem;
@@ -96,10 +121,6 @@ body {
     list-style: none;
 } */
 
-
-
-
-
 /* Hier wordt doormiddel van display: grid een grid layout gedefinieerd. */
 
 /* grid-template-column
@@ -111,13 +132,12 @@ Hier geeft ik aan dat ik 1 row wil inde layout van 100px. Dit zal de hoogte weer
 */
 .story-card {
   display: grid;
-  grid-template-columns: 100px 200px 50px; 
+  grid-template-columns: 100px 200px 50px;
   grid-template-rows: 100px;
   background-color: rgba(153, 147, 158, 0.248);
   justify-content: space-evenly;
   align-items: center;
   margin: 10px;
-
 
   /* Deze media querie zal worden ingeschalkeld als het schem een grootte van 720 of hoger bereikt. alle onderstaande
   css properties worden dan toegepast. */
@@ -129,12 +149,12 @@ Hier geeft ik aan dat ik 1 row wil inde layout van 100px. Dit zal de hoogte weer
   /*grid-template-columns: 100px 1fr 50px;
    /* Definieert de kolommen van de grid: De 1ste kolom is 100px breed, de 2de kolom neemt de rest van de beschikbare ruimte in (1fr),
      de 3de kolom is 50px breed. */
- 
- /* grid-template-rows: auto;
+
+  /* grid-template-rows: auto;
  De rows worden nu automatisch aangepast aan de content
  */
 
- /* width: calc(33.33% - 30px);
+  /* width: calc(33.33% - 30px);
 Dit zorgt ervoor dat de breedte van de element een derde deel ineemnt en dan wordt er 30 pixels daar vanf genomen.
  */
 
@@ -157,7 +177,6 @@ Dit zorgt ervoor dat de breedte van de element een derde deel ineemnt en dan wor
   }
 }
 
-
 /*   grid-column: 1;
 Hier geef ik aan dat ik wil dat de image-element wordt geplaatst vanaf de eerst lijn van de grid */
 
@@ -166,11 +185,14 @@ Hier geef ik aan dat ik wil dat de image-element wordt geplaatst op de eerste ro
 */
 
 /* omdat ik in de parent-container heb gedefinieerd justify-content: space-evenly en align-items:center worden
-de image , titel en play-button in het midden van de grid-block gecentreerd.
+de image , titel en play-button in het midden van de grid-block gecentreerd en gelijkmatig verdeelt in hun blok.
  */
 .playlist-image {
-  grid-column: 1;
-  grid-row: 1;
+  /* Plaatst het element in de eerste rij van de grid, met een start en eindpositie op rij 1. Ik kon hier ook alleen 1 schrijven */
+  grid-row: 1 / 1;
+
+  /* Plaatst het element in de eerste kolom van de grid, met een start- en eindpositie op kolom 1. Ik kon hier ook alleen 1 schrijven */
+  grid-column: 1 / 1;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -187,7 +209,6 @@ de image , titel en play-button in het midden van de grid-block gecentreerd.
     object-fit: contain;
   }
 }
-
 
 .card-title {
   grid-column: 2 / 3;
