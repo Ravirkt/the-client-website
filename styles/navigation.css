@@ -17,6 +17,7 @@ nav li {
 nav a {
   height: 100%;
   padding: 0 30px;
+  /* Dit maakt van de container een flex layout */
   display: flex;
   align-items: center;
   color: rgb(11, 11, 11);
@@ -30,12 +31,11 @@ a {
   text-decoration: none;
 }
 
-.hamburger-drop-down {
-  display: inline;
-  position: sticky;
-}
+
 
 .ham-menu {
+  /* Dit zorgt ervoor dat de navbar op het scherm blijft van de gebruiker. 
+  Als de gebruiker naar boven of beneden scrollt bijft het menus hierdoor op zelfde plek in de viewport */
   position: fixed;
   top: 0;
   left: 0;
@@ -45,9 +45,12 @@ a {
   z-index: 9999;
   box-shadow: -10px 0 30px black;
   display: none;
-  flex-direction: column;
+  /* Dit geeft aan dat de list item wordt weergegeven als een column. De items worden dus onder elkaar weergegeven */
+  flex-direction: column; 
   list-style-type: none;
+  /* Dit zorgt ervoor dat de list items aan de bovenkant van de container worden uitgelijnd */
   align-items: flex-start;
+  /* Dit zorgt ervoor dat de list items aan de bovenkant van de container worden geplaatst */
   justify-content: flex-start;
   backdrop-filter: blur(20px);
 }
