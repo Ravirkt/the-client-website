@@ -58,6 +58,8 @@ kun je deze plaatsen waar ik wil ten opzichte van de de background die ik in de 
   /* Dit zorgt ervoor dat de elementen verticaal in het midden worden geplaatst */
   align-items: center;
   /* background-color: rgba(153, 147, 158, 0.192); */
+
+  /* Dit zorgt voor een tussen ruimte tussen de grid elementen  */
   margin: 2em;
 }
 
